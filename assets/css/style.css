@@ -140,7 +140,7 @@ h3,
 }
 
 .social:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 /*main*/
@@ -345,7 +345,7 @@ input[type=submit] {
   .main-section {
     margin: 20px;
   }
-/*main*/
+  /*main*/
   /*portfolio page*/
   .work {
     position: relative;
@@ -555,6 +555,7 @@ input[type=submit] {
     font-size: 12px;
   }
 }
+
 /*laptop screen*/
 @media screen and (max-width: 980px) {
   
@@ -587,5 +588,28 @@ input[type=submit] {
 
   .social:last-child {
     margin-right: 0;
+  }
+  
+  html {
+      position: relative;
+      min-height: 100%;
+  }
+  
+  body {
+  /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #999;
+    border-top: 5px solid #4aaaa5;
+  }
+  .footer p{
+    color: #fff;
+    text-align: center;
   }
 }
